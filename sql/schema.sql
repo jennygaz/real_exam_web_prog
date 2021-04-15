@@ -51,7 +51,7 @@ CREATE TABLE medico_especialista(
   medico_id INT NOT NULL,
   especialidad_id INT NOT NULL,
   FOREIGN KEY (medico_id) REFERENCES medico(id),
-  FOREIGN KEY (especialidad_id) REFERENCES especialidad(id),
+  FOREIGN KEY (especialidad_id) REFERENCES especialidad_medica(id),
   PRIMARY KEY (medico_id, especialidad_id)
 );
 
